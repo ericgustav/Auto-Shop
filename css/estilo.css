@@ -1,0 +1,247 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+    --cor-vermelha:#B73434;
+    --cor-branca:#FFFFFF;
+    --cor-cinza:#C4C4C4;
+    --cor-preto:#000000;
+    --cor-azul:#2015AA;
+    --fonte: 'Roboto', sans-serif , arial;
+}
+html{
+font-size: 62.5%;
+}
+body{
+font-family:var(--fonte);
+color:var(--cor-branca);
+font-size: 1.6rem;
+}
+img{
+max-width: 100%;
+}
+.container{
+max-width: 1140px;
+width: 85%;
+margin:0 auto;
+}
+header{
+    background:var(--cor-preto);
+    height: 560px;
+}
+header .logo-menu{
+   display: flex;
+   width: 100%;
+   height: 100px;
+   justify-content: space-between;
+   align-items: center;
+}
+header .logo-alt{
+    display: none;
+}
+header .menu-principal{
+   width: 50%;
+}
+header .menu-principal > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+header .menu-principal a{
+    color:aqua;
+    text-decoration: none;
+    font-weight: bold;
+    padding:0.5rem;
+}
+header .menu-principal a:hover{
+color: var(--cor-vermelha);
+border-bottom: .7rem solid var(--cor-branca);
+}
+header .menu-checkbox{
+    display: block;
+}
+header .btn-menu{
+    display: none;
+}
+    
+.banner-shop{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 150px 1fr;
+grid-template-areas:"imagens texto";                 
+}
+header .banner-texto{
+ grid-area: texto;
+ text-align: center;
+ font-size: 2.2rem;
+ line-height: 120%;
+}
+.btn{
+background-color: var(--cor-vermelha);
+padding: 0,3rem 0,5rem;
+color:white;
+text-decoration: none;
+border-radius: 0,3rem;
+}
+.banner-btn{
+font-size: 2rem;
+text-transform: uppercase;
+}
+.opcoes{
+background-color: var(--cor-vermelha);
+border-top: 5px solid var(--cor-branca);
+}
+.Opcoes-titulo{
+background-color: var(--cor-preto);
+display: inline-block;
+padding: 1rem 5rem;
+margin-top: 2rem;
+text-transform: uppercase;
+}
+.container-conteudo{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.opcoes-categoria{
+    width: 20%;
+    text-align: center;
+    margin: 5rem 0;
+}
+.opcoes-categoria a{
+    font-size: 2,5rem;
+    color:white;
+    text-decoration: none;
+}
+.empresa{
+background-color: var(--cor-cinza);
+border-top: 0.5rem solid;
+}
+.empresa-conteudo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.empresa-conteudo img,
+.empresa-conteudo p
+
+{
+    margin: 2rem;
+}
+.localizacao{
+   background: var(--cor-vermelha);
+   border-top: 0.5rem solid var(--cor-branca);
+}
+.localizacao .mapa iframe{
+border: .5rem solid var(--cor-branca);
+margin-top: 3rem;
+border-radius: 2rem;
+width: 100%;
+}
+.container-localizacao{
+display: flex;
+justify-content: space-between;
+padding-bottom: 2rem;
+}
+.localizacao .localizacao-mapa{
+width: 55%;
+}
+.localizacao .localizacao-conteudo{
+width: 35%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.localizacao .localizacao-endereco{
+color: seashell;
+margin-top: 2rem;
+}
+.localizacao .localizacao-endereco .endereco{
+   display: inline-block;
+   padding: 1rem;
+   padding-left: 5rem;
+}
+.localizacao .localizacao-endereco .telefone{
+    display: inline-block;
+    padding: 1rem;
+    padding-left: 5rem;
+ }
+ .localizacao .localizacao-endereco .email{
+    display: inline-block;
+    padding: 1rem;
+    padding-left: 5rem;
+ }
+ footer{
+    background-color: var(--cor-cinza);
+    border-top: 0.5rem solid var(--cor-branca);
+ }
+ .container-footer{
+min-height: 300px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ }
+ footer .sociais{
+display: flex;
+justify-content: space-between;
+ }
+ .conteudo-paginas{
+  border-top: 1.5rem solid var(--cor-vermelha);
+  min-height: 300px;
+  color: #000000;
+ }
+ .conteudo-paginas form{
+padding: 2rem;
+max-width: 600px;
+  margin: 2rem auto;
+
+ }
+ .campo-formulario{
+     margin: 1.5rem 0;
+ }
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea{
+width: 100%;
+padding: 1rem;
+}
+.campo-formulario input[type=radio]{
+    width: initial;
+    margin:0 1rem 0 5rem;
+}
+.campo-formulario input[type=checkbox]{
+    width: initial;
+    margin: 1rem;
+}
+
+.campo-formulario fieldset{
+    padding: 2rem;
+
+}
+.conteudo-quem{
+    border-top: 1.5rem solid var(--cor-vermelha);
+    min-height: 300px;
+    color: #000000;
+    padding: 2rem;
+    max-width: 600px;
+      margin: 2rem auto;
+}
+.section-veiculos{
+    border-top: 1.5rem solid var(--cor-vermelha);
+    min-height: 100px;
+    color: #000000;
+    margin: 3rem;
+}
+
+
